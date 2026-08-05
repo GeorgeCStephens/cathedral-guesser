@@ -46,6 +46,12 @@ h1 {
 .reveal-range { width:105px; accent-color:#111827; }
 .reveal-value { font-size:10px; color:#111827; font-weight:700; min-width:42px; text-align:right; }
 
+@media (max-width: 640px) {
+  .reveal-slider {
+    display: none;
+  }
+}
+
 /* Main container */
 .site-main { flex:1; display:flex; align-items:center; justify-content:center; padding:68px 28px; }
 .container { width:100%; max-width:980px; padding: 0 12px; text-align:center; }
