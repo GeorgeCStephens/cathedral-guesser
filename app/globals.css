@@ -71,8 +71,9 @@ h1 {
 .buttons { display:flex; gap:10px; }
 .btn-submit { background:#111827; color:white; border:none; padding:10px 16px; border-radius:12px; font-weight:700; cursor:pointer; }
 .btn-skip { background:transparent; color:#374151; border:1px solid #eef0ff; padding:10px 14px; border-radius:12px; cursor:pointer; }
-.btn-reveal { background:transparent; color:#374151; border:1px solid #eef0ff; padding:10px 14px; border-radius:12px; cursor:pointer; }
-.btn-hint { background:#111827; color:white; border:none; padding:10px 16px; border-radius:12px; font-weight:700; cursor:pointer; }
+.btn-reveal, .btn-hint { background:transparent; color:#374151; border:1px solid #eef0ff; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:800; }
+.btn-hint { min-width:82px; }
+.btn-reveal-bold { font-weight:800; }
 .btn-reveal[disabled], .btn-submit[disabled], .guess-input[disabled] { opacity: 0.5; cursor: not-allowed; }
 .status { min-height:22px; }
 .status-correct { color:#16a34a; font-weight:700; }

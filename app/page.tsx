@@ -114,7 +114,7 @@ export default function Home() {
                 </button>
                 <button
                   type="button"
-                  className="btn-reveal"
+                  className="btn-reveal btn-reveal-bold"
                   onClick={() => {
                     if (!current) return;
                     if (hintTimerRef.current) {
@@ -134,7 +134,7 @@ export default function Home() {
                 >
                   Reveal
                 </button>
-                <button type="button" className="btn-hint btn-submit" onClick={handleHint} disabled={!!hintVisible}>
+                <button type="button" className="btn-reveal btn-hint" onClick={handleHint} disabled={!!hintVisible}>
                   Hint
                 </button>
               </div>
