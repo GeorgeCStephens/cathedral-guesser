@@ -1,44 +1,211 @@
 {
-  "St Philip's Cathedral, Birmingham": ["West Midlands"],
-  "Blackburn Cathedral": ["North West"],
-  "Bradford Cathedral": ["Yorkshire and the Humber"],
-  "Bristol Cathedral": ["South West"],
-  "Canterbury Cathedral": ["South East"],
-  "Carlisle Cathedral": ["North West"],
-  "Chelmsford Cathedral": ["East of England"],
-  "Chester Cathedral": ["North West"],
-  "Chichester Cathedral": ["South East"],
-  "Coventry Cathedral": ["West Midlands"],
-  "Derby Cathedral": ["East Midlands"],
-  "Durham Cathedral": ["North East"],
-  "Ely Cathedral": ["East of England"],
-  "Exeter Cathedral": ["South West"],
-  "Gloucester Cathedral": ["South West"],
-  "Guildford Cathedral": ["South East"],
-  "Hereford Cathedral": ["West Midlands"],
-  "Leicester Cathedral": ["East Midlands"],
-  "Lichfield Cathedral": ["West Midlands"],
-  "Lincoln Cathedral": ["East Midlands"],
-  "Liverpool Anglican Cathedral": ["North West"],
-  "St. Paul's Cathedral": ["London"],
-  "Manchester Cathedral": ["North West"],
-  "St Nicholas' Cathedral, Newcastle upon Tyne": ["North East"],
-  "Norwich Cathedral": ["East of England"],
-  "Christ Church Cathedral, Oxford": ["South East"],
-  "Peterborough Cathedral": ["East of England"],
-  "Portsmouth Cathedral": ["South East"],
-  "Ripon Cathedral": ["Yorkshire and the Humber"],
-  "Rochester Cathedral": ["East of England"],
-  "St Albans Cathedral": ["East of England"],
-  "Salisbury Cathedral": ["South West"],
-  "Sheffield Cathedral": ["Yorkshire and the Humber"],
-  "Southwark Cathedral": ["London"],
-  "Southwell Minster": ["East Midlands"],
-  "St Edmundsbury Cathedral": ["East of England"],
-  "Truro Cathedral": ["South West"],
-  "Wakefield Cathedral": ["Yorkshire and the Humber"],
-  "Wells Cathedral": ["South West"],
-  "Winchester Cathedral": ["South East"],
-  "Worcester Cathedral": ["West Midlands"],
-  "York Minster": ["Yorkshire and the Humber"]
+  "St Philip's Cathedral, Birmingham": [
+    "Region: West Midlands",
+    "Designed by the English Baroque architect Thomas Archer.",
+    "Originally built as a parish church in 1715 before becoming a cathedral in 1905."
+  ],
+  "Blackburn Cathedral": [
+    "Region: North West",
+    "The cathedral's distinctive lantern tower was completed in 1969.",
+    "Although the parish church is medieval, it only became a cathedral in 1926."
+  ],
+  "Bradford Cathedral": [
+    "Region: Yorkshire and the Humber",
+    "Parts of the building date back to the 15th century.",
+    "It became a cathedral in 1919."
+  ],
+  "Bristol Cathedral": [
+    "Region: South West",
+    "Its eastern end is regarded as one of England's finest examples of a medieval hall church.",
+    "Founded as St Augustine's Abbey in 1140 before becoming a cathedral in 1542."
+  ],
+  "Canterbury Cathedral": [
+    "Region: South East",
+    "The site where Archbishop Thomas Becket was murdered in 1170.",
+    "The seat of the senior bishop of the Church of England."
+  ],
+  "Carlisle Cathedral": [
+    "Region: North West",
+    "Has England's largest surviving medieval stained-glass east window.",
+    "Originally founded as an Augustinian priory in 1122 before becoming a cathedral in 1133."
+  ],
+  "Chelmsford Cathedral": [
+    "Region: East of England",
+    "Became a cathedral in 1914.",
+    "Its origins date back to the 15th-century parish church of St Mary."
+  ],
+  "Chester Cathedral": [
+    "Region: North West",
+    "Originally a Benedictine monastery before becoming a cathedral in 1541.",
+    "Famous for its extensive medieval choir stalls with intricate carvings."
+  ],
+  "Chichester Cathedral": [
+    "Region: South East",
+    "Its separate medieval bell tower is unusual among English cathedrals.",
+    "Has a distinctive 82-metre spire."
+  ],
+  "Coventry Cathedral": [
+    "Region: West Midlands",
+    "The modern cathedral was built beside the ruins of the medieval cathedral destroyed during the local Blitz in 1940.",
+    "The ruined old cathedral has been preserved as a symbol of peace and reconciliation."
+  ],
+  "Derby Cathedral": [
+    "Region: East Midlands",
+    "Its 64.8-metre (212-foot) tower was completed in 1725 to a design by James Gibbs.",
+    "The tower is home to a resident flock of peregrine falcons that has nested there since 2006."
+  ],
+  "Durham Cathedral": [
+    "Region: North East",
+    "A UNESCO World Heritage Site together with nearby Castle.",
+    "It houses the shrine of St Cuthbert and the tomb of the Venerable Bede."
+  ],
+  "Ely Cathedral": [
+    "Region: East of England",
+    "Its famous octagonal lantern tower was built after the original Norman crossing tower collapsed in 1322.",
+    "It is nicknamed 'The Ship of the Fens' because of its prominent position above the surrounding flat landscape."
+  ],
+  "Exeter Cathedral": [
+    "Region: South West",
+    "It has the longest uninterrupted medieval vaulted ceiling in the world.",
+    "Its two Norman towers are among the oldest surviving parts of the building."
+  ],
+  "Gloucester Cathedral": [
+    "Region: South West",
+    "The tomb of King Edward II is located inside the cathedral.",
+    "Its cloisters were used as filming locations for the Harry Potter films."
+  ],
+  "Guildford Cathedral": [
+    "Region: South East",
+    "Construction began in 1936 but was interrupted by the Second World War before being completed in 1961.",
+    "Built from handmade bricks, many of which were laid by volunteers from the local community."
+  ],
+  "Hereford Cathedral": [
+    "Region: West Midlands",
+    "Home to the medieval Mappa Mundi, the largest surviving medieval world map.",
+    "Also houses the Chained Library, one of the world's largest surviving collections of chained books."
+  ],
+  "Leicester Cathedral": [
+    "Region: East Midlands",
+    "King Richard III was reinterred in the cathedral in 2015 after his remains were discovered.",
+    "The church became a cathedral in 1927."
+  ],
+  "Lichfield Cathedral": [
+    "Region: West Midlands",
+    "The only medieval English cathedral with three spires, earning it the nickname 'The Ladies of the Vale'.",
+    "It contains one of the oldest surviving illuminated manuscripts in Britain."
+  ],
+  "Lincoln Cathedral": [
+    "Region: East Midlands",
+    "It was the tallest building in the world for over 200 years after completion of its medieval central spire.",
+    "The cathedral is famous for a carving, which has become a symbol of the city."
+  ],
+  "Liverpool Anglican Cathedral": [
+    "Region: North West",
+    "The largest cathedral in Britain and the eighth-largest church building in the world.",
+    "Designed by Sir Giles Gilbert Scott, who won the design competition at the age of just 22."
+  ],
+  "St. Paul's Cathedral": [
+    "Region: London",
+    "Designed by Sir Christopher Wren following the Great Fire of London in 1666.",
+    "Its famous Whispering Gallery allows whispers to be heard clearly on the opposite side of the dome."
+  ],
+  "Manchester Cathedral": [
+    "Region: North West",
+    "Originally a parish church before becoming a cathedral in 1847.",
+    "Renowned for its richly carved medieval choir stalls and misericords."
+  ],
+  "St Nicholas' Cathedral, Newcastle upon Tyne": [
+    "Region: North East",
+    "Its distinctive lantern tower has become one of cities best-known landmarks.",
+    "It became a cathedral in 1882."
+  ],
+  "Norwich Cathedral": [
+    "Region: East of England",
+    "Has one of the tallest cathedral spires in England at 96 metres (315 feet).",
+    "Its cloisters are the largest monastic cloisters in England."
+  ],
+  "Christ Church Cathedral, Oxford": [
+    "Region: South East",
+    "It is both a cathedral and a chapel.",
+    "The cathedral traces its origins to St Frideswide's Priory, founded in the 12th century."
+  ],
+  "Peterborough Cathedral": [
+    "Region: East of England",
+    "Queen Catherine of Aragon was buried in the cathedral in 1536.",
+    "Its striking west front is famous for its three enormous Gothic arches."
+  ],
+  "Portsmouth Cathedral": [
+    "Region: South East",
+    "Originally the parish church of St Thomas before becoming a cathedral in 1927.",
+    "Its modern west end extension was completed in the 1990s, blending historic and contemporary architecture."
+  ],
+  "Ripon Cathedral": [
+    "Region: Yorkshire and the Humber",
+    "Its crypt was built by St Wilfrid in the 7th century and is one of the oldest surviving structures of any English cathedral.",
+    "The cathedral has maintained the ancient tradition of the [***] Horn, sounded nightly by the city hornblower."
+  ],
+  "Rochester Cathedral": [
+    "Region: East of England",
+    "Founded in AD 604, making it England's second-oldest cathedral.",
+    "Its Norman architecture includes one of the finest Romanesque facades in England."
+  ],
+  "St Albans Cathedral": [
+    "Region: East of England",
+    "Built on the site where Britain's first Christian martyr is traditionally believed to have been buried.",
+    "Its Norman tower is the only surviving 11th-century great crossing tower in England."
+  ],
+  "Salisbury Cathedral": [
+    "Region: South West",
+    "Has the tallest church spire in the United Kingdom at 123 metres (404 feet).",
+    "Houses one of the four surviving original 1215 Magna Carta manuscripts."
+  ],
+  "Sheffield Cathedral": [
+    "Region: Yorkshire and the Humber",
+    "Originally a parish church before becoming a cathedral in 1914.",
+    "Contains the Shrewsbury Chapel, dating from the 16th century, built for the Earls of Shrewsbury."
+  ],
+  "Southwark Cathedral": [
+    "Region: London",
+    "Its origins date back to a church founded in the 12th century on the south bank of the Thames.",
+    "It became a cathedral in 1905."
+  ],
+  "Southwell Minster": [
+    "Region: East Midlands",
+    "Famous for an exquisite medieval stone carvings in the Chapter House.",
+    "Although called a minster, it has served as the cathedral since 1884."
+  ],
+  "St Edmundsbury Cathedral": [
+    "Region: East of England",
+    "Its Millennium Tower was completed in 2005 using traditional medieval building techniques."
+  ],
+  "Truro Cathedral": [
+    "Region: South West",
+    "One of only three cathedrals in the United Kingdom with three spires.",
+    "Built in the Gothic Revival style between 1880 and 1910."
+  ],
+  "Wakefield Cathedral": [
+    "Region: Yorkshire and the Humber",
+    "Its spire rises to about 75 metres (247 feet), making it the tallest in Yorkshire.",
+    "The parish church became a cathedral in 1888."
+  ],
+  "Wells Cathedral": [
+    "Region: South West",
+    "Famous for its unique medieval scissor arches supporting the central tower.",
+    "Its astronomical clock, dating largely from the 14th century, is one of the oldest working clocks in the world."
+  ],
+  "Winchester Cathedral": [
+    "Region: South East",
+    "The longest medieval cathedral in Britain, measuring approximately 170 metres (558 feet).",
+    "The novelist Jane Austen is buried in the cathedral's north aisle."
+  ],
+  "Worcester Cathedral": [
+    "Region: West Midlands",
+    "The cathedral contains the tomb of King John, who was one of the signatories of the Magna Carta.",
+    "Composer Edward Elgar is buried in the cathedral, close to the memorial window dedicated to him."
+  ],
+  "York Minster": [
+    "Region: Yorkshire and the Humber",
+    "Has the largest expanse of medieval stained glass in England, including the Great East Window.",
+    "The present Gothic cathedral was begun in the 13th century and completed in the 15th century."
+  ]
 }

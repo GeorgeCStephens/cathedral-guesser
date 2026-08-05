@@ -3,48 +3,52 @@ import fs from "fs/promises";
 import path from "path";
 
 async function walkDir(dir: string, base: string, mapping: Record<string, any> = {}) {
-  const results: Array<{ hints: string[]; folder: string; image: string }> = [];
+  const results: Array<{ id: string; hints: string[]; folder: string; images: string[] }> = [];
   const dirents = await fs.readdir(dir, { withFileTypes: true });
 
   for (const d of dirents) {
     const full = path.join(dir, d.name);
     if (d.isDirectory()) {
-      // look for image files directly inside this directory
       const files = await fs.readdir(full).catch(() => []);
-      const img = files.find((f) => /\.(jpe?g|png|webp|gif)$/i.test(f));
-      if (img) {
-        // determine hints relative to base
+      const imageFiles = files.filter((f) => /\.(jpe?g|png|webp|gif)$/i.test(f));
+      if (imageFiles.length) {
         const rel = path.relative(base, full);
         const parts = rel.split(path.sep).filter(Boolean);
         let folderName = d.name;
         let hints: string[] = [];
         if (parts.length >= 2) {
-          // base/region/folder -> treat region as an initial hint
           const region = parts[0];
           folderName = parts.slice(1).join("/");
           hints = [region];
         } else {
-          // base/folder
           folderName = parts[0] || d.name;
         }
-        // consult mapping template: try folderName, d.name, and rel
+
         const tryKeys = [folderName, d.name, rel];
         for (const k of tryKeys) {
           if (k && mapping && Object.prototype.hasOwnProperty.call(mapping, k)) {
             const v = mapping[k];
             if (Array.isArray(v)) {
-              const clean = v.map(String).map(s => s.trim()).filter(Boolean);
-              if (clean.length) { hints = clean; break; }
-            } else if (typeof v === 'string' && v.trim()) {
+              const clean = v.map(String).map((s) => s.trim()).filter(Boolean);
+              if (clean.length) {
+                hints = clean;
+                break;
+              }
+            } else if (typeof v === "string" && v.trim()) {
               hints = [v.trim()];
               break;
             }
           }
         }
-        const imagePath = `/images/cathedrals/${encodeURIComponent(parts.join("/"))}/${encodeURIComponent(img)}`;
-        results.push({ hints, folder: folderName, image: imagePath });
+
+        const imagePathBase = `/images/cathedrals/${encodeURIComponent(parts.join("/"))}`;
+        const images = imageFiles
+          .filter(Boolean)
+          .sort()
+          .map((img) => `${imagePathBase}/${encodeURIComponent(img)}`);
+        const id = rel;
+        results.push({ id, hints, folder: folderName, images });
       } else {
-        // recurse one level deeper to find region->folder structure
         const nested = await walkDir(full, base, mapping);
         results.push(...nested);
       }

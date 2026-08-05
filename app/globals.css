@@ -61,8 +61,8 @@ h1 {
 
 /* Card: use inline sizing so card fits image natural size */
 .game-card { background: linear-gradient(180deg,#ffffff,#fbfbff); border-radius:16px; padding:12px; box-shadow: 0 20px 50px rgba(16,24,40,0.08); display:inline-flex; flex-direction:column; align-items:center; gap:10px; }
-.image-wrap { display:inline-block; border-radius:12px; overflow:hidden; max-width:90vw; }
-.cathedral-img { width:auto; max-width:100%; height:auto; display:block; }
+.image-wrap { display:inline-flex; position:relative; border-radius:16px; overflow:hidden; max-width:90vw; max-height:calc(100vh - 260px); margin:0 auto; padding:14px; background:#ffffff; border:1px solid rgba(229,231,235,0.8); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9); box-sizing:border-box; }
+.cathedral-img { width:auto; max-width:100%; max-height:100%; height:auto; object-fit:contain; display:block; }
 
 .card-actions { width:100%; display:flex; justify-content:center; padding-top:8px; }
 .card-actions .buttons { gap:12px; }
@@ -97,12 +97,12 @@ h1 {
 .stat-hint { color:#1e40af; }
 .stat-skip { color:#374151; }
 
-.remaining {
-  margin-top:14px;
-  color:#374151;
-  font-size:15px;
-  font-weight:700;
-}
+  .image-navigation { display:flex; justify-content:space-between; position:absolute; top:50%; left:0; right:0; transform:translateY(-50%); pointer-events:none; padding:0 12px; }
+  .image-nav-button { pointer-events:all; background:rgba(255,255,255,0.88); border:1px solid rgba(15,23,42,0.08); color:#111827; width:42px; height:42px; border-radius:999px; font-size:24px; line-height:1; display:flex; align-items:center; justify-content:center; cursor:pointer; transition:transform 0.2s ease, background 0.2s ease; }
+  .image-nav-button:hover { transform:scale(1.05); background:#ffffff; }
+  .image-counter { margin-top:8px; font-size:14px; color:#475569; font-weight:700; }
+  .image-wrap { position:relative; display:inline-flex; border-radius:12px; overflow:hidden; max-width:90vw; max-height:calc(100vh - 260px); margin:0 auto; }
+
 
 .quiz-complete {
   display:flex;

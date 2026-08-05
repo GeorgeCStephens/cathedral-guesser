@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef } from "react";
 
-type Item = { hints?: string[]; folder: string; image: string };
+type Item = { id: string; hints?: string[]; folder: string; images: string[] };
 
 const STORAGE_KEY = "cathedralGuesserShown";
 
@@ -21,6 +21,7 @@ function extractSignificantWords(s: string) {
 export default function Home() {
   const [items, setItems] = useState<Item[]>([]);
   const [current, setCurrent] = useState<Item | null>(null);
+  const [imageIndex, setImageIndex] = useState(0);
   const [input, setInput] = useState("");
   const [correct, setCorrect] = useState(false);
   const [incorrect, setIncorrect] = useState(false);
@@ -48,16 +49,17 @@ export default function Home() {
 
         if (!data.length) return;
 
-        const remaining = data.filter((item) => !normalizedShown.includes(item.image));
+        const remaining = data.filter((item) => !normalizedShown.includes(item.id));
         const first = remaining.length
           ? remaining[Math.floor(Math.random() * remaining.length)]
           : data[0];
 
         setCurrent(first);
+        setImageIndex(first.images.length ? Math.floor(Math.random() * first.images.length) : 0);
         if (remaining.length === 0) {
           setComplete(true);
-        } else if (!normalizedShown.includes(first.image)) {
-          setShown((prev) => [...prev, first.image]);
+        } else if (!normalizedShown.includes(first.id)) {
+          setShown((prev) => [...prev, first.id]);
         }
       });
   }, []);
@@ -70,14 +72,15 @@ export default function Home() {
   function pickNew(exclude?: Item | null, shownOverride?: string[]) {
     if (!items.length) return;
     const seen = shownOverride ?? shown;
-    const remaining = items.filter((item) => !seen.includes(item.image));
+    const remaining = items.filter((item) => !seen.includes(item.id));
     if (remaining.length === 0) {
       setComplete(true);
       return;
     }
-    const pool = remaining.filter((item) => !exclude || item.image !== exclude.image);
+    const pool = remaining.filter((item) => !exclude || item.id !== exclude.id);
     const candidate = pool.length ? pool[Math.floor(Math.random() * pool.length)] : remaining[0];
     setCurrent(candidate);
+    setImageIndex(candidate.images.length ? Math.floor(Math.random() * candidate.images.length) : 0);
     setCorrect(false);
     setIncorrect(false);
     setRevealed(null);
@@ -88,9 +91,9 @@ export default function Home() {
     }
     setHintVisible(false);
     setHintText(null);
-    if (!seen.includes(candidate.image)) {
+    if (!seen.includes(candidate.id)) {
       setShown((prev) => {
-        const next = shownOverride ? [...shownOverride, candidate.image] : [...prev, candidate.image];
+        const next = shownOverride ? [...shownOverride, candidate.id] : [...prev, candidate.id];
         if (next.length === items.length) {
           setComplete(true);
         }
@@ -113,8 +116,8 @@ export default function Home() {
       setIncorrect(true);
       setIncorrectCount((c) => c + 1);
       setRevealed(current.folder);
-      if (!shown.includes(current.image)) {
-        const nextShown = [...shown, current.image];
+      if (!shown.includes(current.id)) {
+        const nextShown = [...shown, current.id];
         setShown(nextShown);
         if (nextShown.length === items.length) {
           setComplete(true);
@@ -129,7 +132,15 @@ export default function Home() {
   function handleHint() {
     if (!current) return;
     const list = (current.hints || []).filter(Boolean);
-    const chosen = list.length ? list[Math.floor(Math.random() * list.length)] : "No hint available";
+    let chosen = "No hint available";
+    if (list.length) {
+      if (list.length === 1) {
+        chosen = list[0];
+      } else {
+        const available = list.filter((hint) => hint !== hintText);
+        chosen = available.length ? available[Math.floor(Math.random() * available.length)] : list[Math.floor(Math.random() * list.length)];
+      }
+    }
     setHintText(chosen);
     setHintVisible(true);
     setHintsUsedCount((c) => c + 1);
@@ -163,7 +174,8 @@ export default function Home() {
     if (items.length) {
       const first = items[Math.floor(Math.random() * items.length)];
       setCurrent(first);
-      setShown([first.image]);
+      setImageIndex(first.images.length ? Math.floor(Math.random() * first.images.length) : 0);
+      setShown([first.id]);
     }
   }
 
@@ -185,7 +197,27 @@ export default function Home() {
             )}
 
             <div className="image-wrap">
-              <img src={current.image} alt="cathedral" className="cathedral-img" />
+              {current.images.length > 1 && (
+                <div className="image-navigation">
+                  <button
+                    type="button"
+                    className="image-nav-button"
+                    onClick={() => setImageIndex((prev) => (prev - 1 + current.images.length) % current.images.length)}
+                    aria-label="Previous image"
+                  >
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    className="image-nav-button"
+                    onClick={() => setImageIndex((prev) => (prev + 1) % current.images.length)}
+                    aria-label="Next image"
+                  >
+                    ›
+                  </button>
+                </div>
+              )}
+              <img src={current.images[imageIndex]} alt="cathedral" className="cathedral-img" />
             </div>
 
             {!complete && (
@@ -207,9 +239,9 @@ export default function Home() {
                       setHintText(null);
                       setRevealed(current.folder);
                       setSkippedCount((c) => c + 1);
-                      if (!shown.includes(current.image)) {
+                      if (!shown.includes(current.id)) {
                         setShown((prev) => {
-                          const next = [...prev, current.image];
+                          const next = [...prev, current.id];
                           if (next.length === items.length) {
                             setComplete(true);
                           }
@@ -225,7 +257,7 @@ export default function Home() {
                   >
                     Reveal
                   </button>
-                  <button type="button" className="btn-reveal btn-hint" onClick={handleHint} disabled={!!hintVisible}>
+                  <button type="button" className="btn-reveal btn-hint" onClick={handleHint}>
                     Hint
                   </button>
                 </div>

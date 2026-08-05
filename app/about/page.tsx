@@ -23,16 +23,6 @@ export default function AboutPage() {
         </p>
       </section>
       <section>
-        <h2>Features</h2>
-        <ul>
-          <li>Random image selection of famous cathedral landmarks</li>
-          <li>Hint support that shows helpful clues</li>
-          <li>Reveal button for immediate answers</li>
-          <li>Progress tracking with correct, incorrect, skipped, and remaining counts</li>
-          <li>Session persistence so refresh keeps your current round intact</li>
-        </ul>
-      </section>
-      <section>
         <h2>Why this site exists</h2>
         <p>
           The goal is to combine visual recognition practice with a simple, user-friendly quiz
