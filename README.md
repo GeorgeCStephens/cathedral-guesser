@@ -12,13 +12,6 @@ A simple web app that shows a photo of a cathedral and asks you to guess which o
 ## Why this exists
 To practise knowledge and recognition of cathedrals
 
-Local Quick start (for users)
-1. Run the app locally:
-```bash
-npm install
-npm run dev
-```
-2. Visit http://localhost:3000
 
 ## Contributing
 Want to contribute or run the project? See `CONTRIBUTING.md` for developer notes and setup steps. Hints are stored in `data/hints-mapping.json` — edit that file to add or update per-cathedral hints.
