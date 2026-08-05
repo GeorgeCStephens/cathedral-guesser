@@ -2,8 +2,43 @@ import "./globals.css";
 import RevealSlider from "./components/RevealSlider";
 
 export const metadata = {
-  title: "Cathedral Guesser",
-  description: "Guess the cathedral from the image",
+  title: "Cathedral Guesser | Identify Famous Cathedrals",
+  description:
+    "Cathedral Guesser is a photo quiz that helps you identify famous cathedrals with hints, reveals, and score tracking.",
+  keywords: [
+    "cathedral quiz",
+    "cathedral guessing game",
+    "church recognition",
+    "famous cathedrals",
+    "landmark quiz",
+    "Cathedral Guesser",
+  ],
+  authors: [{ name: "George C Stephens" }],
+  openGraph: {
+    title: "Cathedral Guesser",
+    description:
+      "Guess the cathedral from the image with helpful hints and instant feedback.",
+    type: "website",
+    locale: "en_GB",
+    siteName: "Cathedral Guesser",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cathedral Guesser",
+    description:
+      "Guess the cathedral from the image with helpful hints and instant feedback.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
