@@ -4,8 +4,6 @@ import { useEffect, useState, useRef } from "react";
 
 type Item = { id: string; hints?: string[]; folder: string; images: string[] };
 
-const STORAGE_KEY = "cathedralGuesserShown";
-
 function normalize(s: string) {
   return s.toLowerCase().replace(/[^a-z0-9\s]/g, " ").trim();
 }
@@ -37,37 +35,32 @@ export default function Home() {
   const hintTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const raw = typeof window !== "undefined" ? localStorage.getItem(STORAGE_KEY) : null;
-    const initialShown = raw ? JSON.parse(raw) : [];
+    setComplete(false);
+    setCorrectCount(0);
+    setIncorrectCount(0);
+    setHintsUsedCount(0);
+    setSkippedCount(0);
+    setCorrect(false);
+    setIncorrect(false);
+    setRevealed(null);
+    setHintVisible(false);
+    setHintText(null);
+    setShown([]);
+    setInput("");
 
     fetch("/api/cathedrals")
       .then((r) => r.json())
       .then((data: Item[]) => {
         setItems(data);
-        const normalizedShown = Array.isArray(initialShown) ? initialShown : [];
-        setShown(normalizedShown);
 
         if (!data.length) return;
 
-        const remaining = data.filter((item) => !normalizedShown.includes(item.id));
-        const first = remaining.length
-          ? remaining[Math.floor(Math.random() * remaining.length)]
-          : data[0];
+        const first = data[Math.floor(Math.random() * data.length)];
 
         setCurrent(first);
         setImageIndex(first.images.length ? Math.floor(Math.random() * first.images.length) : 0);
-        if (remaining.length === 0) {
-          setComplete(true);
-        } else if (!normalizedShown.includes(first.id)) {
-          setShown((prev) => [...prev, first.id]);
-        }
       });
   }, []);
-
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(shown));
-  }, [shown]);
 
   function pickNew(exclude?: Item | null, shownOverride?: string[]) {
     if (!items.length) return;
@@ -91,15 +84,14 @@ export default function Home() {
     }
     setHintVisible(false);
     setHintText(null);
-    if (!seen.includes(candidate.id)) {
-      setShown((prev) => {
-        const next = shownOverride ? [...shownOverride, candidate.id] : [...prev, candidate.id];
-        if (next.length === items.length) {
-          setComplete(true);
-        }
-        return next;
-      });
-    }
+    setShown((prev) => {
+      const base = shownOverride ? [...shownOverride] : prev;
+      const next = base.includes(candidate.id) ? base : [...base, candidate.id];
+      if (next.length >= items.length) {
+        setComplete(true);
+      }
+      return next;
+    });
   }
 
   function handleSubmit(e?: React.FormEvent) {
@@ -108,24 +100,17 @@ export default function Home() {
     const guessWords = extractSignificantWords(input);
     const targetWords = extractSignificantWords(current.folder);
     const isCorrect = guessWords.some((g) => targetWords.includes(g));
+    const nextShown = shown.includes(current.id) ? shown : [...shown, current.id];
+    setShown(nextShown);
     if (isCorrect) {
       setCorrect(true);
       setCorrectCount((c) => c + 1);
-      setTimeout(() => pickNew(current), 900);
+      setTimeout(() => pickNew(current, nextShown), 900);
     } else {
       setIncorrect(true);
       setIncorrectCount((c) => c + 1);
       setRevealed(current.folder);
-      if (!shown.includes(current.id)) {
-        const nextShown = [...shown, current.id];
-        setShown(nextShown);
-        if (nextShown.length === items.length) {
-          setComplete(true);
-        }
-        setTimeout(() => pickNew(current, nextShown), 900);
-      } else {
-        setTimeout(() => pickNew(current), 900);
-      }
+      setTimeout(() => pickNew(current, nextShown), 900);
     }
   }
 
@@ -168,14 +153,11 @@ export default function Home() {
     setRevealed(null);
     setHintVisible(false);
     setHintText(null);
-    if (typeof window !== "undefined") {
-      localStorage.removeItem(STORAGE_KEY);
-    }
+    setInput("");
     if (items.length) {
       const first = items[Math.floor(Math.random() * items.length)];
       setCurrent(first);
       setImageIndex(first.images.length ? Math.floor(Math.random() * first.images.length) : 0);
-      setShown([first.id]);
     }
   }
 
@@ -223,12 +205,13 @@ export default function Home() {
             {!complete && (
               <div className="card-actions">
                 <div className="buttons">
-                  <button type="submit" form="guess-form" className="btn-submit" disabled={!!revealed}>
+                  <button type="submit" form="guess-form" className="btn-submit" data-testid="submit-answer" disabled={!!revealed}>
                     Submit
                   </button>
                   <button
                     type="button"
                     className="btn-reveal btn-reveal-bold"
+                    data-testid="reveal-button"
                     onClick={() => {
                       if (!current) return;
                       if (hintTimerRef.current) {
@@ -239,19 +222,12 @@ export default function Home() {
                       setHintText(null);
                       setRevealed(current.folder);
                       setSkippedCount((c) => c + 1);
-                      if (!shown.includes(current.id)) {
-                        setShown((prev) => {
-                          const next = [...prev, current.id];
-                          if (next.length === items.length) {
-                            setComplete(true);
-                          }
-                          return next;
-                        });
-                      }
+                      const nextShown = shown.includes(current.id) ? shown : [...shown, current.id];
+                      setShown(nextShown);
                       const raw = typeof window !== "undefined" ? localStorage.getItem("revealDelaySeconds") : null;
                       const secs = raw ? Number(raw) : 3;
                       const ms = Number.isFinite(secs) && !Number.isNaN(secs) ? secs * 1000 : 3000;
-                      setTimeout(() => pickNew(current), ms);
+                      setTimeout(() => pickNew(current, nextShown), ms);
                     }}
                     disabled={!!revealed}
                   >
@@ -287,22 +263,23 @@ export default function Home() {
                   }}
                   className="guess-input"
                   aria-label="Cathedral guess"
+                  data-testid="cathedral-guess-input"
                   disabled={!!revealed}
                 />
               </form>
 
               <div className="status">
-                {correct && <span className="status-correct">Correct</span>}
-                {incorrect && <span className="status-incorrect">Incorrect</span>}
+                {correct && <span className="status-correct" data-testid="status-correct">Correct</span>}
+                {incorrect && <span className="status-incorrect" data-testid="status-incorrect">Incorrect</span>}
               </div>
             </>
           )}
 
           <div className="stats">
-            <div className="stat stat-correct">Correct: {correctCount}</div>
-            <div className="stat stat-incorrect">Incorrect: {incorrectCount}</div>
-            <div className="stat stat-hint">Hints: {hintsUsedCount}</div>
-            <div className="stat stat-skip">Skipped: {skippedCount}</div>
+            <div className="stat stat-correct" data-testid="correct-count">Correct: {correctCount}</div>
+            <div className="stat stat-incorrect" data-testid="incorrect-count">Incorrect: {incorrectCount}</div>
+            <div className="stat stat-hint" data-testid="hint-count">Hints: {hintsUsedCount}</div>
+            <div className="stat stat-skip" data-testid="skip-count">Skipped: {skippedCount}</div>
           </div>
 
           <div className="remaining">Remaining cathedrals to guess: {Math.max(0, items.length - shown.length)}</div>
