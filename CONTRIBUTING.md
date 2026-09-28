@@ -10,10 +10,11 @@ Thanks for your interest in contributing! This document explains how to report i
 ## Repository layout overview
 - `app/layout.tsx` — site chrome and top navigation. Keep changes minimal here; prefer styles in `app/globals.css`.
 - `app/page.tsx` — the main client-side UI and logic. This is where guessing logic, counters, hint/reveal behavior, and most UI lives.
-- `app/api/cathedrals/route.ts` — server route that discovers images and returns JSON. It reads `data/hints-mapping.json` (if present) to infer per-cathedral hints.
+- `app/api/cathedrals/route.ts` — server route that discovers images and returns JSON, including per-image credits from the attribution manifest.
 - `app/components/RevealSlider.tsx` — small client component for the reveal delay slider.
 - `app/globals.css` — the global stylesheet. Styles are intentionally compact and designed for clarity over complexity.
 - `public/images/cathedrals/` — image assets. See the "Images and regions" section below for guidance.
+- `data/photo-attributions.json` — source file page, creator, license, and attribution for sourced photos. Add an entry for each sourced image using its path relative to `public/images/cathedrals/`.
 - `data/` — hardcoded per-cathedral hints mapping (`data/hints-mapping.json`).
 
 ## Design decisions and conventions
@@ -34,13 +35,32 @@ npm run dev
 ## Local development and technical details
 These notes are for contributors who want to run or modify the project.
 
-### Images and hints
+### Images, hints, and photo credits
 
 ```json
 {
   "Canterbury Cathedral": ["South East", "Home of the Archbishop of Canterbury"]
 }
 ```
+
+When adding a photo from an external source, first verify its reuse license on the source's file page. Record every sourced file in `data/photo-attributions.json`, keyed by its path relative to `public/images/cathedrals/`:
+
+```json
+{
+  "schemaVersion": 1,
+  "photos": {
+    "Canterbury Cathedral/commons-123456.jpg": {
+      "originalFilePage": "https://commons.wikimedia.org/wiki/File:Example.jpg",
+      "creator": "Photographer name",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attributionText": "Photo by Photographer name, licensed CC BY-SA 4.0."
+    }
+  }
+}
+```
+
+The quiz shows these credits with the current photo. Keep the source file page, creator, license, and credit text accurate if an image is resized or otherwise adapted.
 
 
 ### Adding a new cathedral
@@ -59,10 +79,10 @@ If you prefer to physically group by region, you may place the folder under `pub
 This repository does not include generator or restructure scripts. Edit `data/hints-mapping.json` directly to add or update hints. If you want automated tools for generating templates or bulk-moving folders, create local scripts or open an Issue requesting a safe utility (for example, a `--dry-run` or `--copy` mode) and include your preferred behavior.
 
 ### API and developer testing
--- The server route `GET /api/cathedrals` returns JSON objects: `{ hints: string[], folder: string, image: string }`. The `image` field is a public URL under `/images/cathedrals/...`.
--- To inspect API output locally:
+- The server route `GET /api/cathedrals` returns JSON objects with `hints`, `folder`, an `images` URL array, and an aligned `imageCredits` array (`null` for images without manifest entries).
+- To inspect API output locally:
 ```bash
-curl -sS http://localhost:3000/api/cathedrals | jq '.[] | {folder,image,hints}'
+curl -sS http://localhost:3000/api/cathedrals | jq '.[] | {folder,images,imageCredits,hints}'
 ```
 
 ### Guess matching and UI

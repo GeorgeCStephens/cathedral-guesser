@@ -1,0 +1,593 @@
+{
+    "schemaVersion":  1,
+    "photos":  {
+                   "Ripon Cathedral/commons-198858359.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:North_Yorkshire_-_Ripon_Cathedral_-_2026-09-04_17-10-33_002.jpg",
+                                                                 "creator":  "Kitmaster",
+                                                                 "license":  "CC BY-SA 4.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0/",
+                                                                 "attributionText":  "Photo by Kitmaster, licensed CC BY-SA 4.0; resized for web use."
+                                                             },
+                   "Carlisle Cathedral/commons-152307787.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1208430_Cathedral_Church_of_the_Holy_and_Undivided_Trinity,_East_End,_seen_from_the_South_Carlisle_20240527_0065.jpg",
+                                                                    "creator":  "Tilman2007",
+                                                                    "license":  "CC BY-SA 4.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                    "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                },
+                   "St Edmundsbury Cathedral/commons-116917150.jpg":  {
+                                                                          "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Bury_St_Edmunds_Cathedral.jpg",
+                                                                          "creator":  "acediscovery",
+                                                                          "license":  "CC BY 4.0",
+                                                                          "licenseUrl":  "https://creativecommons.org/licenses/by/4.0",
+                                                                          "attributionText":  "Photo by acediscovery, licensed CC BY 4.0; resized for web use."
+                                                                      },
+                   "Manchester Cathedral/commons-58061754.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:15.10.16_Manchester_Cathedral_2_(30329718266).jpg",
+                                                                     "creator":  "donald judge",
+                                                                     "license":  "CC BY 2.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by/2.0",
+                                                                     "attributionText":  "Photo by donald judge, licensed CC BY 2.0; resized for web use."
+                                                                 },
+                   "Bristol Cathedral/commons-138493059.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:2023-09-15_Bristol_Cathedral_01.jpg",
+                                                                   "creator":  "Bärbel Miemietz",
+                                                                   "license":  "CC BY-SA 4.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                   "attributionText":  "Photo by Bärbel Miemietz, licensed CC BY-SA 4.0; resized for web use."
+                                                               },
+                   "Gloucester Cathedral/commons-153249354.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Gloucester_-_Gloucester_Cathedral_-_20240909105820.jpg",
+                                                                      "creator":  "Acediscovery",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by Acediscovery, licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "Christ Church Cathedral, Oxford/commons-9294615.jpg":  {
+                                                                               "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral,_Christ_Church,_Oxford,_from_the_cloisters._-_geograph.org.uk_-_187944.jpg",
+                                                                               "creator":  "David Hawgood",
+                                                                               "license":  "CC BY-SA 2.0",
+                                                                               "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                               "attributionText":  "Photo by David Hawgood, licensed CC BY-SA 2.0; resized for web use."
+                                                                           },
+                   "Lichfield Cathedral/commons-155453711.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Exterior_of_Lichfield_Cathedral_-_geograph.org.uk_-_6995694.jpg",
+                                                                     "creator":  "Mat Fascione",
+                                                                     "license":  "CC BY-SA 2.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0/",
+                                                                     "attributionText":  "Photo by Mat Fascione, licensed CC BY-SA 2.0; resized for web use."
+                                                                 },
+                   "Bristol Cathedral/commons-138494364.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:2023-09-17_Bristol_Cathedral_by_night_illuminated,_seen_from_the_top_of_a_ferris_wheel_on_Anchor_Square_01.jpg",
+                                                                   "creator":  "Bernd Schwabe",
+                                                                   "license":  "CC BY-SA 4.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                   "attributionText":  "Photo by Bernd Schwabe, licensed CC BY-SA 4.0; resized for web use."
+                                                               },
+                   "Portsmouth Cathedral/commons-127176176.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_St_Thomas_of_Canterbury,_High_Street,_Old_Portsmouth_(NHLE_Code_1333198)_(August_2022)_(1).JPG",
+                                                                      "creator":  "Hassocks5489",
+                                                                      "license":  "CC0",
+                                                                      "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                                                                      "attributionText":  "Photo by Hassocks5489, licensed CC0; resized for web use."
+                                                                  },
+                   "Durham Cathedral/commons-152342324.jpg":  {
+                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1161023_Cathedral_Church_of_Christ,_Blessed_Mary_the_Virgin_and_St_Cuthbert_of_Durham,_Central_Tower,_Cloisters_Durham_20240523_0098_DxO.jpg",
+                                                                  "creator":  "Tilman2007",
+                                                                  "license":  "CC BY-SA 4.0",
+                                                                  "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                  "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                              },
+                   "Wells Cathedral/commons-148615798.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Well%27s_Cathedral_27.jpg",
+                                                                 "creator":  "Marley Sexton",
+                                                                 "license":  "CC0",
+                                                                 "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                                                                 "attributionText":  "Photo by Marley Sexton, licensed CC0; resized for web use."
+                                                             },
+                   "Derby Cathedral/commons-153251043.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:City_of_Derby_-_Derby_Cathedral_-_20240913102910.jpg",
+                                                                 "creator":  "Acediscovery",
+                                                                 "license":  "CC BY-SA 4.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                 "attributionText":  "Photo by Acediscovery, licensed CC BY-SA 4.0; resized for web use."
+                                                             },
+                   "Ripon Cathedral/commons-198858517.jpg":  {
+                                                                "originalFilePage":  "https://commons.wikimedia.org/wiki/File:North_Yorkshire_-_Ripon_Cathedral_-_2026-09-04_17-12-26_001.jpg",
+                                                                "creator":  "Kitmaster",
+                                                                "license":  "CC BY-SA 4.0",
+                                                                "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0/",
+                                                                "attributionText":  "Photo by Kitmaster, licensed CC BY-SA 4.0; resized for web use."
+                                                            },
+                   "Chester Cathedral/commons-20300434.jpg":  {
+                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Chester_Cathedral_ext_Hamilton_005.JPG",
+                                                                  "creator":  "Stephen Hamilton",
+                                                                  "license":  "CC BY-SA 3.0",
+                                                                  "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                  "attributionText":  "Photo by Stephen Hamilton, licensed CC BY-SA 3.0; resized for web use."
+                                                              },
+                   "Hereford Cathedral/commons-164133699.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:-168_Old_Postcard_-_HEREFORD_CATHEDRAL_FROM_THE_RIVER_-_Salmon_Series_3122_(50516254272).jpg",
+                                                                    "creator":  "Mark Crombie",
+                                                                    "license":  "Public domain",
+                                                                    "licenseUrl":  "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+                                                                    "attributionText":  "Photo by Mark Crombie, licensed Public domain; resized for web use."
+                                                                },
+                   "Peterborough Cathedral/commons-142426413.jpg":  {
+                                                                        "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_St_Peter_and_St_Andrew,_Peterborough_(NHLE_Code_1331492)_(November_2011)_(1).jpg",
+                                                                        "creator":  "User:Hassocks5489",
+                                                                        "license":  "CC0",
+                                                                        "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                                                                        "attributionText":  "Photo by User:Hassocks5489, licensed CC0; resized for web use."
+                                                                    },
+                   "Portsmouth Cathedral/commons-137873357.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Dedication_plaque_of_the_West_door_of_Portsmouth_Cathedral,_August_2023.jpg",
+                                                                      "creator":  "No Swan So Fine",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by No Swan So Fine, licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "Southwell Minster/commons-13512314.jpg":  {
+                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Approach_from_the_west_-_geograph.org.uk_-_839152.jpg",
+                                                                  "creator":  "Alan Murray-Rust",
+                                                                  "license":  "CC BY-SA 2.0",
+                                                                  "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                  "attributionText":  "Photo by Alan Murray-Rust, licensed CC BY-SA 2.0; resized for web use."
+                                                              },
+                   "St Philip\u0027s Cathedral, Birmingham/commons-36502190.jpg":  {
+                                                                                       "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Birmingham_-_St_Philip%27s_Square_in_Autumn.jpg",
+                                                                                       "creator":  "JimmyGuano",
+                                                                                       "license":  "CC BY-SA 4.0",
+                                                                                       "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                                       "attributionText":  "Photo by JimmyGuano, licensed CC BY-SA 4.0; resized for web use."
+                                                                                   },
+                   "St Edmundsbury Cathedral/commons-125483413.jpg":  {
+                                                                          "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Dalton_family_tomb_south_of_St_Edmundsbury_Cathedral,_Bury_St_Edmunds,_October_2022.jpg",
+                                                                          "creator":  "No Swan So Fine",
+                                                                          "license":  "CC BY-SA 4.0",
+                                                                          "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                          "attributionText":  "Photo by No Swan So Fine, licensed CC BY-SA 4.0; resized for web use."
+                                                                      },
+                   "St Philip\u0027s Cathedral, Birmingham/commons-88495281.jpg":  {
+                                                                                       "originalFilePage":  "https://commons.wikimedia.org/wiki/File:103_Colmore_Row_Birmingham_-_2020-03-10_-_Andy_Mabbett_-_01.jpg",
+                                                                                       "creator":  "Andy Mabbett",
+                                                                                       "license":  "CC BY-SA 4.0",
+                                                                                       "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                                       "attributionText":  "Photo by Andy Mabbett, licensed CC BY-SA 4.0; resized for web use."
+                                                                                   },
+                   "Lincoln Cathedral/commons-50090410.jpg":  {
+                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Lincoln_Cathedral_Chapter_House.jpg",
+                                                                  "creator":  "Michael D Beckwith",
+                                                                  "license":  "CC0",
+                                                                  "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                                                                  "attributionText":  "Photo by Michael D Beckwith, licensed CC0; resized for web use."
+                                                              },
+                   "St Nicholas\u0027 Cathedral, Newcastle upon Tyne/commons-138726566.jpg":  {
+                                                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_St_Nicholas_(geograph_7610920).jpg",
+                                                                                                  "creator":  "Carroll Pierce",
+                                                                                                  "license":  "CC BY-SA 2.0",
+                                                                                                  "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                                                  "attributionText":  "Photo by Carroll Pierce, licensed CC BY-SA 2.0; resized for web use."
+                                                                                              },
+                   "Exeter Cathedral/commons-16881081.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Exeter-28Ap11-wyrdlight.jpg",
+                                                                 "creator":  "Antony McCallum",
+                                                                 "license":  "CC BY-SA 3.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                 "attributionText":  "Photo by Antony McCallum, licensed CC BY-SA 3.0; resized for web use."
+                                                             },
+                   "Wakefield Cathedral/commons-7779589.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Wakefield_-_Cathedral.jpg",
+                                                                   "creator":  "Mike Kirby",
+                                                                   "license":  "CC BY-SA 2.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                   "attributionText":  "Photo by Mike Kirby, licensed CC BY-SA 2.0; resized for web use."
+                                                               },
+                   "Gloucester Cathedral/commons-137812426.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_St_Peter_and_the_Holy_and_Indivisible_Trinity,_Cloister_Gloucester_1245952_20230819_0183.jpg",
+                                                                      "creator":  "Tilman2007",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "Canterbury Cathedral/commons-122761182.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Canterbury_Cathedral,_August_2022_1t_19.jpg",
+                                                                      "creator":  "No Swan So Fine",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by No Swan So Fine, licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "Bradford Cathedral/commons-13127733.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Bolton_Road_Entrance_to_Bradford_Cathedral_-_geograph.org.uk_-_597087.jpg",
+                                                                   "creator":  "Betty Longbottom",
+                                                                   "license":  "CC BY-SA 2.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                   "attributionText":  "Photo by Betty Longbottom, licensed CC BY-SA 2.0; resized for web use."
+                                                               },
+                   "Canterbury Cathedral/commons-47823361.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Canterbury-cathedral-wyrdlight.jpg",
+                                                                     "creator":  "Antony McCallum: Who is the uploader, photographer, full copyright owner and proprietor of WyrdLight.com",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Antony McCallum: Who is the uploader, photographer, full copyright owner and proprietor of WyrdLight.com, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Salisbury Cathedral/commons-175158176.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:At_Salisbury_2012_02.jpg",
+                                                                     "creator":  "Photograph by Mike Peel ( www.mikepeel.net ).",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Photograph by Mike Peel ( www.mikepeel.net )., licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Southwell Minster/commons-11279486.jpg":  {
+                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:A_peep_at_Southwell_Minster%27s_tower_-_geograph.org.uk_-_257727.jpg",
+                                                                  "creator":  "Stanley Howe",
+                                                                  "license":  "CC BY-SA 2.0",
+                                                                  "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                  "attributionText":  "Photo by Stanley Howe, licensed CC BY-SA 2.0; resized for web use."
+                                                              },
+                   "Leicester Cathedral/commons-12318227.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_St_Martin,_Leicester_-_geograph.org.uk_-_289716.jpg",
+                                                                    "creator":  "Tim Hallam",
+                                                                    "license":  "CC BY-SA 2.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                    "attributionText":  "Photo by Tim Hallam, licensed CC BY-SA 2.0; resized for web use."
+                                                                },
+                   "Durham Cathedral/commons-152184382.jpg":  {
+                                                                  "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1161023_Cathedral_Church_of_Christ,_Blessed_Mary_the_Virgin_and_St_Cuthbert_of_Durham,_Chapterhouse,_Cloisters_Durham_20240523_0109_DxO.jpg",
+                                                                  "creator":  "Tilman2007",
+                                                                  "license":  "CC BY-SA 4.0",
+                                                                  "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                  "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                              },
+                   "Exeter Cathedral/commons-27677913.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Exeter,_Kathedrale_St._Peter_--_2013_--_1.jpg",
+                                                                 "creator":  "Dietmar Rabich",
+                                                                 "license":  "CC BY-SA 4.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                 "attributionText":  "Photo by Dietmar Rabich, licensed CC BY-SA 4.0; resized for web use."
+                                                             },
+                   "Coventry Cathedral/commons-165120302.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_of_St_Michael_(Coventry_Cathedral),_Priory_Street,_Coventry_(NHLE_Code_1342941)_(April_2025)_(1).jpg",
+                                                                    "creator":  "User:Hassocks5489",
+                                                                    "license":  "CC0",
+                                                                    "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                                                                    "attributionText":  "Photo by User:Hassocks5489, licensed CC0; resized for web use."
+                                                                },
+                   "Liverpool Anglican Cathedral/commons-21109413.jpg":  {
+                                                                             "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Anglican_Cathedral_Liverpool_2_(6730011723).jpg",
+                                                                             "creator":  "Tony Hisgett from Birmingham, UK",
+                                                                             "license":  "CC BY 2.0",
+                                                                             "licenseUrl":  "https://creativecommons.org/licenses/by/2.0",
+                                                                             "attributionText":  "Photo by Tony Hisgett from Birmingham, UK, licensed CC BY 2.0; resized for web use."
+                                                                         },
+                   "Truro Cathedral/commons-110617500.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Benchmark_on_Truro_Cathedral_-_geograph.org.uk_-_2696537.jpg",
+                                                                 "creator":  "Roger Templeman",
+                                                                 "license":  "CC BY-SA 2.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                 "attributionText":  "Photo by Roger Templeman, licensed CC BY-SA 2.0; resized for web use."
+                                                             },
+                   "Truro Cathedral/commons-178587810.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Arthur_Quiller-Couch_plaque_in_Truro_Cathedral.jpg",
+                                                                 "creator":  "Jowaninpensans",
+                                                                 "license":  "CC BY-SA 4.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                 "attributionText":  "Photo by Jowaninpensans, licensed CC BY-SA 4.0; resized for web use."
+                                                             },
+                   "Guildford Cathedral/commons-113324658.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Aerial_photograph_of_Guildford.jpg",
+                                                                     "creator":  "davidhc",
+                                                                     "license":  "CC BY 2.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by/2.0",
+                                                                     "attributionText":  "Photo by davidhc, licensed CC BY 2.0; resized for web use."
+                                                                 },
+                   "Derby Cathedral/commons-113834672.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:All_Saints_(Derby_Cathedral)_Full_Street,_Derby_(4346582248).jpg",
+                                                                 "creator":  "The Roaming Picture Taker",
+                                                                 "license":  "CC BY 2.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by/2.0",
+                                                                 "attributionText":  "Photo by The Roaming Picture Taker, licensed CC BY 2.0; resized for web use."
+                                                             },
+                   "Lincoln Cathedral/commons-152187543.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1388680_Cathedral_Church_of_St_Mary,_Cloisters_Lincoln_20240519_0314.jpg",
+                                                                   "creator":  "Tilman2007",
+                                                                   "license":  "CC BY-SA 4.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                   "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                               },
+                   "Chester Cathedral/commons-152183384.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1376398_Cathedral_Church_of_Christ_and_the_Blessed_Virgin_Mary,_Choir_Stalls_Chester_20240528_0266.jpg",
+                                                                   "creator":  "Tilman2007",
+                                                                   "license":  "CC BY-SA 4.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                   "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                               },
+                   "Guildford Cathedral/commons-9213499.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Arch_and_Cathedral_Steps,_Guildford._-_geograph.org.uk_-_116666.jpg",
+                                                                   "creator":  "Colin Smith",
+                                                                   "license":  "CC BY-SA 2.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                   "attributionText":  "Photo by Colin Smith, licensed CC BY-SA 2.0; resized for web use."
+                                                               },
+                   "Sheffield Cathedral/commons-32037791.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_1_(3542675928).jpg",
+                                                                    "creator":  "allen watkin from London, UK",
+                                                                    "license":  "CC BY-SA 2.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                    "attributionText":  "Photo by allen watkin from London, UK, licensed CC BY-SA 2.0; resized for web use."
+                                                                },
+                   "Salisbury Cathedral/commons-28245739.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1023581-Cathedral_Church_of_St_Mary_(10).jpg",
+                                                                    "creator":  "Johan Bakker",
+                                                                    "license":  "CC BY-SA 3.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                    "attributionText":  "Photo by Johan Bakker, licensed CC BY-SA 3.0; resized for web use."
+                                                                },
+                   "Rochester Cathedral/commons-81539000.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Memorial_to_Joseph_Maas,_Rochester_Cathedral.jpg",
+                                                                    "creator":  "Stephencdickson",
+                                                                    "license":  "CC BY-SA 4.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                    "attributionText":  "Photo by Stephencdickson, licensed CC BY-SA 4.0; resized for web use."
+                                                                },
+                   "Chichester Cathedral/commons-137730708.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_the_Holy_Trinity,_from_the_South_Chichester_1354261_20230815_0028.jpg",
+                                                                      "creator":  "Tilman2007",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "Ely Cathedral/commons-146580903.jpg":  {
+                                                               "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cannon_and_cathedral,_Ely,_Cambridgeshire_-_2024-03-15.jpg",
+                                                               "creator":  "The wub",
+                                                               "license":  "CC BY-SA 4.0",
+                                                               "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                               "attributionText":  "Photo by The wub, licensed CC BY-SA 4.0; resized for web use."
+                                                           },
+                   "Winchester Cathedral/commons-94600381.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Bishop_Wilberforce%27s_tomb_taken_from_the_Kings_and_Scribes_exhibition_in_Winchester_cathedral.jpg",
+                                                                     "creator":  "Dianthus33",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Dianthus33, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Southwark Cathedral/commons-35480031.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Catedral_Southwark,_Londres,_Inglaterra,_2014-08-11,_DD_104.JPG",
+                                                                    "creator":  "Diego Delso",
+                                                                    "license":  "CC BY-SA 4.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                    "attributionText":  "Photo by Diego Delso, licensed CC BY-SA 4.0; resized for web use."
+                                                                },
+                   "Blackburn Cathedral/commons-169526332.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Blackburn_Cathedral,_Burne-Jones_window_-_geograph.org.uk_-_7895126.jpg",
+                                                                     "creator":  "Stephen Craven",
+                                                                     "license":  "CC BY-SA 2.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                     "attributionText":  "Photo by Stephen Craven, licensed CC BY-SA 2.0; resized for web use."
+                                                                 },
+                   "Wells Cathedral/commons-135228690.jpg":  {
+                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Grotesques,_Wells_Cathedral,_UK,_%C2%A9Tobias_Frank.jpg",
+                                                                 "creator":  "Tobias Frank",
+                                                                 "license":  "CC BY-SA 4.0",
+                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                 "attributionText":  "Photo by Tobias Frank, licensed CC BY-SA 4.0; resized for web use."
+                                                             },
+                   "Manchester Cathedral/commons-147176765.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:At_Manchester_2006_082.jpg",
+                                                                      "creator":  "Photograph by Mike Peel ( www.mikepeel.net ).",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by Photograph by Mike Peel ( www.mikepeel.net )., licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "Carlisle Cathedral/commons-152402964.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Carlisle_-_Carlisle_Cathedral_-_20230529184314.jpg",
+                                                                    "creator":  "Crowsus",
+                                                                    "license":  "CC BY-SA 4.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                    "attributionText":  "Photo by Crowsus, licensed CC BY-SA 4.0; resized for web use."
+                                                                },
+                   "Coventry Cathedral/commons-128698417.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Coventry_Cathedral,_February_2023_01.jpg",
+                                                                    "creator":  "No Swan So Fine",
+                                                                    "license":  "CC BY-SA 4.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                    "attributionText":  "Photo by No Swan So Fine, licensed CC BY-SA 4.0; resized for web use."
+                                                                },
+                   "Leicester Cathedral/commons-75155047.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Emma_Wigley,_Leicester_Cathedral.jpg",
+                                                                    "creator":  "Peter_Glyn",
+                                                                    "license":  "CC BY-SA 3.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                    "attributionText":  "Photo by Peter_Glyn, licensed CC BY-SA 3.0; resized for web use."
+                                                                },
+                   "Winchester Cathedral/commons-28241857.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1095509-Cathedral_Church_of_the_Holy_Trinity_(3).jpg",
+                                                                     "creator":  "Johan Bakker",
+                                                                     "license":  "CC BY-SA 3.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                     "attributionText":  "Photo by Johan Bakker, licensed CC BY-SA 3.0; resized for web use."
+                                                                 },
+                   "York Minster/commons-93960455.jpg":  {
+                                                             "originalFilePage":  "https://commons.wikimedia.org/wiki/File:DSC0532s.jpg",
+                                                             "creator":  "P. Hughes",
+                                                             "license":  "CC BY-SA 4.0",
+                                                             "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                             "attributionText":  "Photo by P. Hughes, licensed CC BY-SA 4.0; resized for web use."
+                                                         },
+                   "Norwich Cathedral/commons-136878945.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Catedral,_Norwich,_Inglaterra,_2022-11-19,_DD_101-103_HDR.jpg",
+                                                                   "creator":  "Diego Delso",
+                                                                   "license":  "CC BY-SA 4.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                   "attributionText":  "Photo by Diego Delso, licensed CC BY-SA 4.0; resized for web use."
+                                                               },
+                   "St Albans Cathedral/commons-138261591.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Abbey_Church_of_St_Alban,,_Chancel_South_Aisle_St_Albans_1103163_20230926_0178.jpg",
+                                                                     "creator":  "Tilman2007",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "York Minster/commons-152223782.jpg":  {
+                                                              "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1257222_Cathedral_Church_of_St_Peter,_York_Minster,_high_altar_York_20240521_0147.jpg",
+                                                              "creator":  "Tilman2007",
+                                                              "license":  "CC BY-SA 4.0",
+                                                              "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                              "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                          },
+                   "Bradford Cathedral/commons-148339337.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Bennett%27s_Barbers,_Bradford_-_geograph.org.uk_-_6325554.jpg",
+                                                                    "creator":  "habiloid",
+                                                                    "license":  "CC BY-SA 2.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                    "attributionText":  "Photo by habiloid, licensed CC BY-SA 2.0; resized for web use."
+                                                                },
+                   "Chelmsford Cathedral/commons-34512043.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Chelmsford_Cathedral_Organ,_Essex,_UK_-_Diliff.jpg",
+                                                                     "creator":  "Diliff",
+                                                                     "license":  "CC BY-SA 3.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                     "attributionText":  "Photo by Diliff, licensed CC BY-SA 3.0; resized for web use."
+                                                                 },
+                   "Peterborough Cathedral/commons-12293242.jpg":  {
+                                                                       "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Square,_Peterborough_-_geograph.org.uk_-_279654.jpg",
+                                                                       "creator":  "Philip Halling",
+                                                                       "license":  "CC BY-SA 2.0",
+                                                                       "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                       "attributionText":  "Photo by Philip Halling, licensed CC BY-SA 2.0; resized for web use."
+                                                                   },
+                   "Rochester Cathedral/commons-138255344.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Rochester,_Cathedral_Church_of_Christ_and_the_Belssed_Virgin_Mary_of_Rochester_Medway_1086423_20230926_0208.jpg",
+                                                                     "creator":  "Tilman2007",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Blackburn Cathedral/commons-121827220.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Blackburn_-_Cathedral_roof_and_spire_-_geograph.org.uk_-_3696865.jpg",
+                                                                     "creator":  "Dave Bevis",
+                                                                     "license":  "CC BY-SA 2.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                     "attributionText":  "Photo by Dave Bevis, licensed CC BY-SA 2.0; resized for web use."
+                                                                 },
+                   "Chichester Cathedral/commons-144314262.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_of_the_Holy_Trinity,_The_Close,_Chichester_(NHLE_Code_1354261)_(January_2012)_(1).jpg",
+                                                                      "creator":  "User:Hassocks5489",
+                                                                      "license":  "CC0",
+                                                                      "licenseUrl":  "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+                                                                      "attributionText":  "Photo by User:Hassocks5489, licensed CC0; resized for web use."
+                                                                  },
+                   "St Albans Cathedral/commons-129986632.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Door-St-Albans-Cathedral.jpg",
+                                                                     "creator":  "Acediscovery",
+                                                                     "license":  "CC BY 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by/4.0",
+                                                                     "attributionText":  "Photo by Acediscovery, licensed CC BY 4.0; resized for web use."
+                                                                 },
+                   "Hereford Cathedral/commons-162043998.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:A_view_of_Hereford_Cathedral,_Herefordshire.jpg",
+                                                                    "creator":  "Rosser1954",
+                                                                    "license":  "CC BY 4.0",
+                                                                    "licenseUrl":  "https://creativecommons.org/licenses/by/4.0",
+                                                                    "attributionText":  "Photo by Rosser1954, licensed CC BY 4.0; resized for web use."
+                                                                },
+                   "Southwark Cathedral/commons-10532593.jpg":  {
+                                                                    "originalFilePage":  "https://commons.wikimedia.org/wiki/File:DesmondTutuonstagewithMerbecke.jpg",
+                                                                    "creator":  "Cheeekymunkey ( talk )",
+                                                                    "license":  "Public domain",
+                                                                    "licenseUrl":  "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+                                                                    "attributionText":  "Photo by Cheeekymunkey ( talk ), licensed Public domain; resized for web use."
+                                                                },
+                   "Lichfield Cathedral/commons-5301697.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Catedral_de_Lichfield.jpg",
+                                                                   "creator":  "en:user:Scu98rkr",
+                                                                   "license":  "CC BY-SA 3.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                                   "attributionText":  "Photo by en:user:Scu98rkr, licensed CC BY-SA 3.0; resized for web use."
+                                                               },
+                   "Worcester Cathedral/commons-137866170.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cathedral_Church_of_Christ_and_St_Mary,_Altar_in_the_Choir_Worcester_1389728_20230819_0203.jpg",
+                                                                     "creator":  "Tilman2007",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Liverpool Anglican Cathedral/commons-51875867.jpg":  {
+                                                                             "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Anglican_Cathedral_at_Night.jpg",
+                                                                             "creator":  "Veguiv",
+                                                                             "license":  "CC BY-SA 4.0",
+                                                                             "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                             "attributionText":  "Photo by Veguiv, licensed CC BY-SA 4.0; resized for web use."
+                                                                         },
+                   "Worcester Cathedral/commons-156463630.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Tower_of_Worcester_Cathedral,_February_2022.jpg",
+                                                                     "creator":  "No Swan So Fine",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by No Swan So Fine, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Sheffield Cathedral/commons-113901229.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:A_perambulation_around_Sheffield%27s_Anglican_Cathedral_(37)_-_geograph.org.uk_-_2983153.jpg",
+                                                                     "creator":  "Basher Eyre",
+                                                                     "license":  "CC BY-SA 2.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/2.0",
+                                                                     "attributionText":  "Photo by Basher Eyre, licensed CC BY-SA 2.0; resized for web use."
+                                                                 },
+                   "St. Paul\u0027s Cathedral/commons-35481638.jpg":  {
+                                                                           "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Catedral_de_San_Pablo,_Londres,_Inglaterra,_2014-08-11,_DD_121.JPG",
+                                                                           "creator":  "Diego Delso",
+                                                                           "license":  "CC BY-SA 4.0",
+                                                                           "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0/",
+                                                                           "attributionText":  "Photo by Diego Delso, licensed CC BY-SA 4.0; resized for web use."
+                                                                       },
+                   "Christ Church Cathedral, Oxford/commons-173015863.jpg":  {
+                                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1283787_I_CHRISTCHURCH,_CATHEDRAL_CHURCH,_Tomb_of_John_de_Nowers_Oxford_20250617_0003.jpg",
+                                                                                 "creator":  "Tilman2007",
+                                                                                 "license":  "CC BY-SA 4.0",
+                                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                                 "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                             },
+                   "Norwich Cathedral/commons-200441314.jpg":  {
+                                                                   "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Norfolk_-_Norwich_Cathedral_-_2026-09-27_22-21-19_007.jpg",
+                                                                   "creator":  "FaringdonFolly",
+                                                                   "license":  "CC BY-SA 4.0",
+                                                                   "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                   "attributionText":  "Photo by FaringdonFolly, licensed CC BY-SA 4.0; resized for web use."
+                                                               },
+                   "Ely Cathedral/commons-27972799.jpg":  {
+                                                              "originalFilePage":  "https://commons.wikimedia.org/wiki/File:20130406_Ely_Cathedral_01.jpg",
+                                                              "creator":  "Dmitry Tonkonog and Ksenia Fedosova",
+                                                              "license":  "CC BY-SA 3.0",
+                                                              "licenseUrl":  "https://creativecommons.org/licenses/by-sa/3.0",
+                                                              "attributionText":  "Photo by Dmitry Tonkonog and Ksenia Fedosova, licensed CC BY-SA 3.0; resized for web use."
+                                                          },
+                   "Wakefield Cathedral/commons-129525266.jpg":  {
+                                                                     "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Christmas_tree_by_the_Cathedral_on_Kirkgate,_Wakefield,_West_Yorkshire_(3rd_December_2022).jpg",
+                                                                     "creator":  "Mtaylor848",
+                                                                     "license":  "CC BY-SA 4.0",
+                                                                     "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                     "attributionText":  "Photo by Mtaylor848, licensed CC BY-SA 4.0; resized for web use."
+                                                                 },
+                   "Chelmsford Cathedral/commons-136832103.jpg":  {
+                                                                      "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Chelmsford_Cathedral,_August_2023_i_06.jpg",
+                                                                      "creator":  "No Swan So Fine",
+                                                                      "license":  "CC BY-SA 4.0",
+                                                                      "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                      "attributionText":  "Photo by No Swan So Fine, licensed CC BY-SA 4.0; resized for web use."
+                                                                  },
+                   "St. Paul\u0027s Cathedral/commons-175192451.jpg":  {
+                                                                           "originalFilePage":  "https://commons.wikimedia.org/wiki/File:1079157_I_Cathedral_Church_of_St_Paul,_St_Paul%27s_Churchyard_EC4_London_20250615_0012.jpg",
+                                                                           "creator":  "Tilman2007",
+                                                                           "license":  "CC BY-SA 4.0",
+                                                                           "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                           "attributionText":  "Photo by Tilman2007, licensed CC BY-SA 4.0; resized for web use."
+                                                                       },
+                   "St Nicholas\u0027 Cathedral, Newcastle upon Tyne/commons-69352068.jpg":  {
+                                                                                                 "originalFilePage":  "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_St_Nicolas_Newcastle_Tyne_10.jpg",
+                                                                                                 "creator":  "Chabe01",
+                                                                                                 "license":  "CC BY-SA 4.0",
+                                                                                                 "licenseUrl":  "https://creativecommons.org/licenses/by-sa/4.0",
+                                                                                                 "attributionText":  "Photo by Chabe01, licensed CC BY-SA 4.0; resized for web use."
+                                                                                             }
+               }
+}

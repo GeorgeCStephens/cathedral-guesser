@@ -2,8 +2,32 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
-async function walkDir(dir: string, base: string, mapping: Record<string, any> = {}) {
-  const results: Array<{ id: string; hints: string[]; folder: string; images: string[] }> = [];
+type PhotoAttribution = {
+  originalFilePage: string;
+  creator: string;
+  license: string;
+  licenseUrl: string;
+  attributionText: string;
+};
+
+type PhotoAttributionManifest = {
+  schemaVersion: number;
+  photos: Record<string, PhotoAttribution>;
+};
+
+async function walkDir(
+  dir: string,
+  base: string,
+  mapping: Record<string, any> = {},
+  photoAttributions: Record<string, PhotoAttribution> = {},
+) {
+  const results: Array<{
+    id: string;
+    hints: string[];
+    folder: string;
+    images: string[];
+    imageCredits: Array<PhotoAttribution | null>;
+  }> = [];
   const dirents = await fs.readdir(dir, { withFileTypes: true });
 
   for (const d of dirents) {
@@ -46,10 +70,14 @@ async function walkDir(dir: string, base: string, mapping: Record<string, any> =
           .filter(Boolean)
           .sort()
           .map((img) => `${imagePathBase}/${encodeURIComponent(img)}`);
+        const imageCredits = imageFiles
+          .filter(Boolean)
+          .sort()
+          .map((img) => photoAttributions[`${parts.join("/")}/${img}`] ?? null);
         const id = rel;
-        results.push({ id, hints, folder: folderName, images });
+        results.push({ id, hints, folder: folderName, images, imageCredits });
       } else {
-        const nested = await walkDir(full, base, mapping);
+        const nested = await walkDir(full, base, mapping, photoAttributions);
         results.push(...nested);
       }
     }
@@ -71,9 +99,13 @@ export async function GET() {
     mapping = {};
   }
   try {
-    const data = await walkDir(base, base, mapping);
+    const attributionPath = path.join(process.cwd(), "data", "photo-attributions.json");
+    const attributionRaw = await fs.readFile(attributionPath, "utf8");
+    const attributionManifest = JSON.parse(attributionRaw) as PhotoAttributionManifest;
+    const data = await walkDir(base, base, mapping, attributionManifest.photos);
     return NextResponse.json(data);
   } catch (err) {
-    return NextResponse.json([], { status: 200 });
+    console.error("Failed to load cathedral data", err);
+    return NextResponse.json({ error: "Failed to load cathedral data." }, { status: 500 });
   }
 }
