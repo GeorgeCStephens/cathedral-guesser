@@ -2,7 +2,21 @@
 
 import { useEffect, useState, useRef } from "react";
 
-type Item = { id: string; hints?: string[]; folder: string; images: string[] };
+type PhotoCredit = {
+  originalFilePage: string;
+  creator: string;
+  license: string;
+  licenseUrl: string;
+  attributionText: string;
+};
+
+type Item = {
+  id: string;
+  hints?: string[];
+  folder: string;
+  images: string[];
+  imageCredits?: Array<PhotoCredit | null>;
+};
 
 function normalize(s: string) {
   return s.toLowerCase().replace(/[^a-z0-9\s]/g, " ").trim();
@@ -32,6 +46,7 @@ export default function Home() {
   const [skippedCount, setSkippedCount] = useState(0);
   const [shown, setShown] = useState<string[]>([]);
   const [complete, setComplete] = useState(false);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const hintTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -47,9 +62,13 @@ export default function Home() {
     setHintText(null);
     setShown([]);
     setInput("");
+    setLoadError(null);
 
     fetch("/api/cathedrals")
-      .then((r) => r.json())
+      .then((r) => {
+        if (!r.ok) throw new Error(`Cathedral API returned ${r.status}`);
+        return r.json();
+      })
       .then((data: Item[]) => {
         setItems(data);
 
@@ -59,6 +78,10 @@ export default function Home() {
 
         setCurrent(first);
         setImageIndex(first.images.length ? Math.floor(Math.random() * first.images.length) : 0);
+      })
+      .catch((error: unknown) => {
+        console.error("Failed to load cathedral data", error);
+        setLoadError("Cathedral photos could not be loaded. Please refresh the page.");
       });
   }, []);
 
@@ -161,6 +184,8 @@ export default function Home() {
     }
   }
 
+  const photoCredit = current?.imageCredits?.[imageIndex];
+
   return (
     <div className="container">
       {current ? (
@@ -201,6 +226,25 @@ export default function Home() {
               )}
               <img src={current.images[imageIndex]} alt="cathedral" className="cathedral-img" />
             </div>
+
+            {photoCredit && (
+              <details className="photo-credit">
+                <summary>Photo credits and license</summary>
+                <div className="photo-credit-details">
+                  <span>{photoCredit.attributionText}</span>
+                  <span>Creator: {photoCredit.creator}</span>
+                  <span>
+                    License:{" "}
+                    <a href={photoCredit.licenseUrl} target="_blank" rel="noopener noreferrer">
+                      {photoCredit.license}
+                    </a>
+                  </span>
+                  <a href={photoCredit.originalFilePage} target="_blank" rel="noopener noreferrer">
+                    Original file page
+                  </a>
+                </div>
+              </details>
+            )}
 
             {!complete && (
               <div className="card-actions">
@@ -285,7 +329,11 @@ export default function Home() {
           <div className="remaining">Remaining cathedrals to guess: {Math.max(0, items.length - shown.length)}</div>
         </>
       ) : (
-        <div className="loading">Loading…</div>
+        loadError ? (
+          <div className="loading" role="alert">{loadError}</div>
+        ) : (
+          <div className="loading">Loading…</div>
+        )
       )}
     </div>
   );
